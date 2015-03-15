@@ -259,7 +259,7 @@ $(function (){
                             url: 'http://sammok.github.io/cytoscape_for_app_logic_editor/build/data/data.json',
                             success: function (response){
                                 console.log('Success to get Data:', response);
-                                cy.load(response);
+                                cy.load(response.elements);
                             },
                             error: function (error) {
                                 console.log('Fails to get data: ', error);
