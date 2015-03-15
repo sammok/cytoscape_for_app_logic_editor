@@ -256,7 +256,7 @@ $(function (){
                     // bind get remote data btn
                     $('#remoteData').click(function (){
                         $.ajax({
-                            url: 'http://sammok.github.io/cytoscape_for_app_logic_editor/data/data.json',
+                            url: 'http://sammok.github.io/cytoscape_for_app_logic_editor/build/data/data.json',
                             success: function (response){
                                 console.log('Success to get Data:', response);
                                 cy.load(response);
